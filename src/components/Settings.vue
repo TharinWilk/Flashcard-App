@@ -1,7 +1,7 @@
 <template lang="html">
-  <section id="settings" class="absoluteCenter">
-    <h2>Settings</h2>
-    <div class="controls flexColumn">
+  <section id="settings">
+    <h1>Settings</h1>
+    <div class="controls">
       <CardControls/>
       <ColorControls/>
     </div>
@@ -18,20 +18,5 @@ export default {
 </script>
 
 <style lang="css">
-  #settings {
-    padding: 2rem;
-    background: var(--textarea-hover);
-    width: 50vw;;;
-    max-height: 80vh;
-    min-height: 520px;
-    border-radius: 5px;
-  }
 
-  #settings h2 {
-    border-bottom: 2px solid var(--textarea-background);
-  }
-
-  .controls {
-    width: 100%;
-  }
 </style>

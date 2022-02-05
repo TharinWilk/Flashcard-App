@@ -1,15 +1,10 @@
 <template lang="html">
-  <div class="cardControls">
-    <div class="controlDeck">
-      <h4>
-        <button @click="deleteDeck">
-          Delete Flashcards
-        </button>
-      </h4>
-      <p>Click here to delete the currently stored deck of flashcards</p>
+  <div class="card-controls">
+    <div class="control-deck">
+      <h3>Delete Flashcards</h3>
+      <p class="section-text">Click here to delete the currently stored deck of flashcards.</p>
+      <button class="section-button" @click="deleteDeck"> Delete Flashcards</button>
     </div>
-
-    <div class="controlCard" />
   </div>
 </template>
 
@@ -25,31 +20,5 @@ export default {
 </script>
 
 <style lang="css">
-  .cardControls {
-    width: 100%;
-  }
 
-  .controlDeck {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    margin: 1rem 0;
-  }
-
-  .controlDeck h4 button {
-    background: none;
-    border: none;
-    border-radius: 5px;
-    margin: 1rem 0 1rem 0;
-    padding: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 4px 0;
-  }
-
-  .controlDeck h4 button:hover {
-    background: var(--text-color);
-  }
 </style>
